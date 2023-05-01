@@ -1,0 +1,46 @@
+.me-auto {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: larger;
+}
+
+/* Home Slide */
+
+.d-block{
+    width: 100%;
+    height: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.col-md-3{
+   background-color: whitesmoke;
+}
+
+.nav{
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.HeaderCart {
+    position: relative;
+    font-weight: 900;
+    font-size: larger;
+  }
+  
+  .HeaderCart .count {
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+    background-color: rgb(200, 74, 74);
+    color: white;
+    z-index: 99;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+    font-size: 0.7rem;
+  }
+  
