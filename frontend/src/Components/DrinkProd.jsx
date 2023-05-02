@@ -23,12 +23,11 @@ const DrinkProd = ({product}) => {
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
           <Card.Title>R{product.price}</Card.Title>
-          <Button variant="primary" onClick={()=>(product)}><BsFillCartPlusFill/> </Button>
+          <Button variant="primary" onClick={()=> addToCart(product)}><BsFillCartPlusFill/> </Button>
         </Card.Body>
       </Card>
     </div>
     </>
-   
   );
 };
 
