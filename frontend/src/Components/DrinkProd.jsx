@@ -11,7 +11,7 @@ const DrinkProd = ({product}) => {
   return (
     <>
      <div className="col-md-3 my-2">
-     <Card className="product_card" onClick={()=>navigate(`/${product.id}`)}>
+     <Card className="product_card" onClick={()=>navigate(`/drinks/${product.id}`)}>
         <Card.Img className="product-img" variant="top" src={product.image} />
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>

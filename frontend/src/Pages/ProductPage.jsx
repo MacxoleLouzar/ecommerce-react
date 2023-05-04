@@ -7,10 +7,10 @@ const ProductPage = () => {
 
     const {id} = useParams()
     const [product, setProduct] = useState(null)
-    const [products, setProducts] = useState(data.pizza)
-    const [drink, setDrink] = useState(data.drinks)
-    const [salad, setsalad] = useState(data.salads)
-    const [sauces, setSauces] = useState(data.sauces)
+    const [products, setProducts] = useState(data.pizza[0].id)
+    const [drink, setDrink] = useState(data.drinks[0].id)
+    const [salad, setsalad] = useState(data.salads[0].id)
+    const [sauces, setSauces] = useState(data.sauces[0].id)
     const [sides, setsides] = useState(data.sides)
     const [dessert, setdessert] = useState(data.dessert)
 
@@ -49,7 +49,7 @@ const ProductPage = () => {
             return data.dessert.find((x)=>x.id === id)
         })
     },[id])
-    console.log(setProducts)
+    
 
   return (
     <>
