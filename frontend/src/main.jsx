@@ -9,6 +9,7 @@ import Meal from "./Pages/Meal";
 import Layout from "./Components/Layout";
 import AppState from "./context/AppState";
 import Extras from "./Pages/Extras";
+import ProductPage from "./Pages/ProductPage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/extras",
         element: <Extras />,
+      },
+      {
+        path:"/:id",
+        element: <ProductPage/>,
       },
     ],
   },
