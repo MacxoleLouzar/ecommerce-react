@@ -10,10 +10,11 @@ const AppState = ({children}) => {
     const [sauces, setSauces] = useState(data.sauces)
     const [sides, setsides] = useState(data.sides)
     const [dessert, setdessert] = useState(data.dessert)
+    const [pasta, setPasta] = useState(data.pasta)
 
 
   return (
-    <AppContext.Provider value={{products, drink, salad, sauces, dessert, sides }}>
+    <AppContext.Provider value={{products, drink, salad, sauces, dessert, sides, pasta }}>
         {children}
     </AppContext.Provider>
   )
