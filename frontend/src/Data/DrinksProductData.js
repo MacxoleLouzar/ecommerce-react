@@ -1,6 +1,6 @@
 const DrinksProductData = [
     {
-        "id": 0,
+        "id": 1000,
         "name": "Coca Cola",
         "description": "Coca Cola 330ml",
         "ingredients": [],
@@ -10,7 +10,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/nJ6LeWv.png"
     },
     {
-        "id": 1,
+        "id": 1001,
         "name": "Fanta",
         "description": "Fanta 330ml",
         "ingredients": [],
@@ -20,7 +20,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/1WDkfme.png"
     },
     {
-        "id": 2,
+        "id": 1002,
         "name": "Sprite",
         "description": "Sprite 330ml",
         "ingredients": [],
@@ -30,7 +30,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/qP4Nx1x.jpg"
     },
     {
-        "id": 3,
+        "id": 1003,
         "name": "Water",
         "description": "Dorna 0.5L",
         "ingredients": [],
@@ -40,7 +40,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/yYuuaL1.jpg"
     },
     {
-        "id": 4,
+        "id": 1004,
         "name": "Sparkling water",
         "description": "Dorna 0.5L",
         "ingredients": [],
@@ -50,7 +50,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/0nyJk19.jpg"
     },
     {
-        "id": 5,
+        "id": 1005,
         "name": "Fuzetea",
         "description": "Fuzetea 0.5L Peach or Lemon",
         "ingredients": [],
@@ -60,7 +60,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/dsHumXE.jpg"
     },
     {
-        "id": 6,
+        "id": 1006,
         "name": "Brownie",
         "description": "A delicious cake with chocolate and hazelnuts",
         "ingredients": [],
@@ -70,7 +70,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/7WbfaDN.png"
     },
     {
-        "id": 7,
+        "id": 1007,
         "name": "Chocolate Tortilla",
         "description": "Tortilla filled with chocolate cream",
         "ingredients": [],
@@ -80,7 +80,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/Mgsc3IZ.png"
     },
     {
-        "id": 8,
+        "id": 1008,
         "name": "Apple Pie",
         "description": "Hot pie with apple and cinnamon",
         "ingredients": [],
@@ -90,7 +90,7 @@ const DrinksProductData = [
         "image": "https://i.imgur.com/OWIVhWX.png"
     },
     {
-        "id": 9,
+        "id": 1009,
         "name": "Cheesecake",
         "description": "Cheesecake with berries topping",
         "ingredients": [],
@@ -101,3 +101,5 @@ const DrinksProductData = [
     },
 
 ]
+
+export default DrinksProductData;

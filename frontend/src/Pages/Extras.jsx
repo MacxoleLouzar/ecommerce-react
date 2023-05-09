@@ -9,12 +9,9 @@ const Extras = () => {
   return (
     <div className="container">
       <div className="row">
-        {sides.map((prod, index)=>(
-          <DrinkProd key={index} product={prod} />
-        ))}
          {sauces.map((prod, index)=>(
           <DrinkProd key={index} product={prod} />
-        ))}
+        ))};
       </div>
     </div>
   )

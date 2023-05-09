@@ -395,7 +395,7 @@ const MealProduct =
             "vegetarian": false,
             "price": 20,
             "image": "https://i.imgur.com/Ph0IjrX.png"
-        }
+        },
     ]
 
 

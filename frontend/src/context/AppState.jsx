@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import AppContext from './AppContext'
-import data from '../Data/data'
+//import data from '../Data/data'
+import DrinksProductData from '../Data/DrinksProductData'
+import MealProduct from '../Data/MealProduct'
+import Extras from '../Data/Extras'
 
 const AppState = ({children}) => {
 
-    const [products, setProduct] = useState(data.pizza)
-    const [drink, setDrink] = useState(data.drinks)
-    const [salad, setsalad] = useState(data.salads)
-    const [sauces, setSauces] = useState(data.sauces)
-    const [sides, setsides] = useState(data.sides)
-    const [dessert, setdessert] = useState(data.dessert)
-    const [pasta, setPasta] = useState(data.pasta)
+    const [products, setProduct] = useState(MealProduct)
+    const [drink, setDrink] = useState(DrinksProductData)
+    const [sauces, setSauces] = useState(Extras)
+   
 
 
   return (
-    <AppContext.Provider value={{products, drink, salad, sauces, dessert, sides, pasta }}>
+    <AppContext.Provider value={{products, drink, sauces }}>
         {children}
     </AppContext.Provider>
   )
