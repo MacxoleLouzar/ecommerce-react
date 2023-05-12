@@ -5,18 +5,20 @@ import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
+import CartModal from "../Components/CartModal";
 
 function Header() {
   const navigate = useNavigate();
   const values = [true];
-  const [fullscreen, setFullscreen] = useState(true);
-  const [show, setShow] = useState(false);
 
-  function handleShow(breakpoint) {
-    setFullscreen(breakpoint);
-    setShow(true);
-  }
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const onCloseModal = () => {
+    console.log("close modal");
+    setModalOpen(false);
+    console.log(modalOpen);
+  };
+
   return (
     <div className="nav">
       <Navbar bg="light" variant="light">
@@ -41,32 +43,19 @@ function Header() {
             className="HeaderCart"
           >
             <span className="count"></span>
-              {values.map((v, idx) => (
-                <Button
-                  key={idx}
-                  className="me-2 mb-2"
-                  onClick={() => handleShow(v)}
-                >
-                   <BsFillCartPlusFill />
-                  {typeof v === "string" && `below ${v.split("-")[0]}`}
-                </Button>
-              ))}
-              <Modal
-                show={show}
-               fullscreen={fullscreen}
-                
-                onHide={() => setShow(false)}
+            {values.map((idx) => (
+              <Button
+                key={idx}
+                className="openModalBtn"
+                onClick={() => setModalOpen(true)}
               >
-                <Modal.Header closeButton>
-                  <Modal.Title>Cart</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Modal body content</Modal.Body>
-                <Button>CheckOut</Button>
-              </Modal>
-            
+                <BsFillCartPlusFill />
+              </Button>
+            ))}
           </Nav.Link>
         </Container>
       </Navbar>
+      {modalOpen && <CartModal onCloseModal={onCloseModal} />}
     </div>
   );
 }
