@@ -16,10 +16,6 @@
     padding: 20px;
 }
 
-.col-md-3{
-   background-color: whitesmoke;
-}
-
 .nav{
     display: block;
     position: sticky;
@@ -67,4 +63,9 @@
     border: solid 1px gray;
     background-color: white;
     padding: 2rem;
+  }
+
+  .container{
+    margin-top: 20px;
+    background-color: whitesmoke;
   }
