@@ -9,7 +9,6 @@ const Drinks = () => {
       <div className="row">
         {drink.map(( product, index) => (
           <DrinkProd key={index} product={product} />
-     
         ))};
       </div>
     </div>
