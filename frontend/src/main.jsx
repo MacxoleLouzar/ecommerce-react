@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { ToastContainer} from 'react-toastify';
 import Home from "./Pages/Home.jsx";
 import Drink from "./Pages/Drinks";
 import Meal from "./Pages/Meal";
@@ -52,6 +53,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AppState>
       <RouterProvider router={router} />
+      <ToastContainer />
     </AppState>
   </React.StrictMode>
 );

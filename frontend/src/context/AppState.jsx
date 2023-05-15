@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AppContext from './AppContext'
-import {toast} from 'react-toastify'
+import { toast } from 'react-toastify'
 //import data from '../Data/data'
 import DrinksProductData from '../Data/DrinksProductData'
 import MealProduct from '../Data/MealProduct'

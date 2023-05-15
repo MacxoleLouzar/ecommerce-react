@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import AppContext from "../context/AppContext";
 
-const CartComponent = () => {
+const CartComponent = (product) => {
+  const { removeFromCart } = useContext(AppContext);
   return (
-    <div>CartComponent</div>
-  )
-}
-
-export default CartComponent
+    <Card className="CartComponet">
+      <Card.Img variant="top" src={product.image} />
+      <Card.Body>
+        <Card.Title>{product.Title}</Card.Title>
+        <Card.Text>{product.price}</Card.Text>
+        <Button variant="danger" onClick={() => removeFromCart(product)}>
+          X
+        </Button>
+      </Card.Body>
+    </Card>
+  );
+};
+export default CartComponent;
