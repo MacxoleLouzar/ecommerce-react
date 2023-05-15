@@ -16,10 +16,6 @@
     padding: 20px;
 }
 
-.col-md-3{
-   background-color: whitesmoke;
-}
-
 .nav{
     display: block;
     position: sticky;
@@ -69,15 +65,15 @@
     padding: 2rem;
   }
   .container{
-    margin-top: 15px;
+    margin-top: 25px;
+    background-color: whitesmoke;
   }
-
   /* modal */
 
   .modalBackground {
     width: 100vw;
     height: 100vh;
-    background-color: #2121219c;
+    background-color: #130d0d9c;
     position: fixed;
     display: flex;
     z-index: 99;
@@ -88,13 +84,13 @@
   }
   
   .modalContainer {
-    width: 50%;
-    height: 80%;
+    width: 30%;
+    height: 90%;
     overflow-y: scroll;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 25px;
+    padding: 20px;
   }
   
   .modalContainer .title {
@@ -111,13 +107,11 @@
   .titleCloseBtn button {
     background-color: transparent;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
   }
   
   .modalContainer .body {
-
-
     font-size: 1.7rem;
     text-align: center;
   }
@@ -130,8 +124,8 @@
   }
   
   .modalContainer .footer button {
-    width: 150px;
-    height: 45px;
+    width: 120px;
+    height: 400px;
     margin: 10px;
     border: none;
     background-color: cornflowerblue;

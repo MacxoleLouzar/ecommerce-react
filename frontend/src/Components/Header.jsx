@@ -14,9 +14,7 @@ function Header() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const onCloseModal = () => {
-    console.log("close modal");
     setModalOpen(false);
-    console.log(modalOpen);
   };
 
   return (

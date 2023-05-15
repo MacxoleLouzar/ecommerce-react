@@ -41,7 +41,7 @@ const ProductPage = () => {
       <div className='row mt-5'>
         <div className='col-md-6 text-center'>
           <img src={MealProductx.image} alt='...' className='radius my-3' />
-          <Link to='/' className='btn btn-outline-dark'>
+          <Link to='/meal' className='btn btn-outline-dark'>
             Back
           </Link>
         </div>
@@ -73,7 +73,7 @@ const ProductPage = () => {
       <div className='row mt-5'>
         <div className='col-md-6 text-center'>
           <img src={DrinksProductDatax.image} alt='...' className='radius my-3' />
-          <Link to='/' className='btn btn-outline-dark'>
+          <Link to='/drinks' className='btn btn-outline-dark'>
             Back
           </Link>
         </div>
@@ -105,7 +105,7 @@ const ProductPage = () => {
       <div className='row mt-5'>
         <div className='col-md-6 text-center'>
           <img src={Extrasx?.image} alt='...' className='radius my-3' />
-          <Link to='/' className='btn btn-outline-dark'>
+          <Link to='/extras' className='btn btn-outline-dark'>
             Back
           </Link>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import AppContext from './AppContext'
+import {toast} from 'react-toastify'
 //import data from '../Data/data'
 import DrinksProductData from '../Data/DrinksProductData'
 import MealProduct from '../Data/MealProduct'
@@ -10,11 +11,30 @@ const AppState = ({children}) => {
     const [products, setProduct] = useState(MealProduct)
     const [drink, setDrink] = useState(DrinksProductData)
     const [sauces, setSauces] = useState(Extras)
-   
+    const [cart, setCart] = useState([])
+
+    const AddToCart=(product)=>{
+      if(cart.includes(product)){
+        toast.error(`Item already in a Cart`)
+        return
+      }
+        setCart([...cart, product])
+        toast.info(`Item added in a Cart`)
+    }
+
+    const removeFromCart = (product)=>{
+      const cartItem = cart.filter((item) => item._id !== product.id)
+      setCart(cartItem)
+      toast.info(`Item was removed`)
+    }
+
+    const clearCart =()=>{
+      setCart([])
+    }
 
 
   return (
-    <AppContext.Provider value={{products, drink, sauces }}>
+    <AppContext.Provider value={{products, drink, sauces, cart, AddToCart, removeFromCart, clearCart }}>
         {children}
     </AppContext.Provider>
   )
