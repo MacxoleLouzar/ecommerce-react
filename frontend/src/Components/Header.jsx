@@ -4,13 +4,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import { BsFillCartPlusFill } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CartModal from "../Components/CartModal";
+import AppContext from "../context/AppContext";
 
 function Header() {
   const navigate = useNavigate();
   const values = [true];
-
+  const {cart} = useContext(AppContext)
   const [modalOpen, setModalOpen] = useState(false);
 
   const onCloseModal = () => {
@@ -40,7 +41,7 @@ function Header() {
             // onClick={() => navigate('/cart')}
             className="HeaderCart"
           >
-            <span className="count"></span>
+            <span className="count">{cart.length}</span>
             {values.map((idx) => (
               <Button
                 key={idx}

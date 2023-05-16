@@ -8,12 +8,12 @@ import Extras from '../Data/Extras'
 const ProductPage = () => {
 
     const {id} = useParams()
-   // const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState(null)
     const [Extrasx, setExtras] = useState(null)
     const [DrinksProductDatax, setDrinksProductData] = useState(null)
     const [MealProductx, setMealProduct] = useState(null)
     
-
+    const{AddToCart} = useContext(AppContext)
     
     useEffect(()=>{
       setDrinksProductData(()=>{
@@ -54,7 +54,7 @@ const ProductPage = () => {
           <div className='text-center'>
             <button
               className='btn btn-outline-dark'
-              onClick={() => addToCart(product)}
+              onClick={() => AddToCart(product)}
             >
               Add to cart
             </button>
@@ -86,7 +86,7 @@ const ProductPage = () => {
           <div className='text-center'>
             <button
               className='btn btn-outline-dark'
-              onClick={() => addToCart(product)}
+              onClick={() => AddToCart(product)}
             >
               Add to cart
             </button>
@@ -118,7 +118,7 @@ const ProductPage = () => {
           <div className='text-center'>
             <button
               className='btn btn-outline-dark'
-              onClick={() => addToCart(product)}
+              onClick={() => AddToCart(product)}
             >
               Add to cart
             </button>
