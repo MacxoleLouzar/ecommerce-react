@@ -1,23 +1,23 @@
 const Extras = [
     {
-        "id": 2000,
-        "name": "Wedges",
-        "description": "Baked potatoes, slightly spicy",
-        "ingredients": [],
-        "spicy": false,
-        "vegetarian": true,
-        "price": 6,
-        "image": "https://i.imgur.com/sxP6sJt.png"
+        id: 2000,
+        name: "Wedges",
+        description: "Baked potatoes, slightly spicy",
+        ingredients: [],
+        spicy: false,
+        vegetarian: true,
+        price: 6,
+        image: "https://i.imgur.com/sxP6sJt.png"
     },
     {
-        "id": 2001,
-        "name": "Onion rings",
-        "description": "Fried onion rings",
-        "ingredients": [],
-        "spicy": false,
-        "vegetarian": true,
-        "price": 6,
-        "image": "https://i.imgur.com/i3Jintb.png"
+        id: 2001,
+        name: "Onion rings",
+        description: "Fried onion rings",
+        ingredients: [],
+        spicy: false,
+        vegetarian: true,
+        price: 6,
+        image: "https://i.imgur.com/i3Jintb.png"
     },
     {
         "id": 2002,

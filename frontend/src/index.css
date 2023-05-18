@@ -84,7 +84,7 @@
   }
   
   .modalContainer {
-    width: 30%;
+    width: 50%;
     height: 90%;
     overflow-y: scroll;
     border-radius: 12px;
@@ -139,3 +139,10 @@
     background-color: crimson;
   }
   
+.cartitemshow{
+  width: 150%;
+}
+
+.cartitemshow .display-6{
+  padding-right: 35%;
+}

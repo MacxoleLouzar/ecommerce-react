@@ -5,7 +5,7 @@ import AppContext from '../context/AppContext'
 
 const Extras = () => {
 
-  const {sauces, sides} = useContext(AppContext)
+  const {sauces} = useContext(AppContext)
   return (
     <div className="container">
       <div className="row">
